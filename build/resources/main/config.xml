@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <aop:aspectj-autoproxy/>
+
+    <!--<bean id="teaBean" class="com.spring.demo.Tea"/>-->
+    <!--<bean id="expressTeaBean" class="com.spring.demo.ExpressTea"/>-->
+    <!--<bean id="restaurant" class="com.spring.demo.Restaurant">-->
+    <!--<property name="hotDrink" ref="expressTeaBean"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="myApplicationEventListener" class="com.spring.demo.MyApplicationEvent"/>-->
+
+    <!--<bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor"/>-->
+
+    <!--<bean id="applicationEventMulticaster" class="org.springframework.context.event.SimpleApplicationEventMulticaster">-->
+        <!--<property name="taskExecutor" ref="taskExecutor"/>-->
+    <!--</bean>-->
+    <!--<bean id="firstCalculation" class="com.spring.demo.FirstCalculation"/>-->
+    <!--<bean id="secondCalculation" class="com.spring.demo.SecondCalculation"/>-->
+    <!--<bean id="thirdCalculation" class="com.spring.demo.ThirdCalculation"/>-->
+    <!--<bean class="com.spring.demo.CalculationAspect"/>-->
+
+
+    <bean id="dummy" class="com.spring.demo.Dummy"/>
+    <bean id="dummyChild" class="com.spring.demo.DummyChild"/>
+    <bean id="myAspect" class="com.aspect.demo.MyAspect"/>
+</beans>
